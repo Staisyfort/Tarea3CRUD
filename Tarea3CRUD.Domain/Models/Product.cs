@@ -12,7 +12,7 @@ namespace Tarea3CRUD.Domain.Models
         public string Name { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "La categoría es obligatoria.")]
-        [StringLength(50, ErrorMessage = "La categoría no puede exceder los 50 caracteres.")]
+        [StringLength(30, ErrorMessage = "La categoría no puede exceder los 30 caracteres.")]
         [Display(Name = "Categoría")]
         public string Category { get; set; } = string.Empty;
 
