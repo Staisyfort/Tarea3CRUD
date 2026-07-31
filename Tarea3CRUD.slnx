@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Tarea3CRUD.Domain/Tarea3CRUD.Domain.csproj" />
+  <Project Path="Tarea3CRUD.Infrastructure/Tarea3CRUD.Infrastructure.csproj" />
+  <Project Path="Tarea3CRUD/Tarea3CRUD.csproj" />
+</Solution>

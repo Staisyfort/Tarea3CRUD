@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "Name": "Laptop Dell Inspiron",
+    "Category": "Electr\u00F3nica",
+    "Price": 799.99,
+    "Stock": 15,
+    "Description": "Laptop con procesador Intel i7, 16GB de RAM y 512GB SSD."
+  },
+  {
+    "Id": 2,
+    "Name": "Smartphone Samsung Galaxy S23",
+    "Category": "Electr\u00F3nica",
+    "Price": 899.99,
+    "Stock": 20,
+    "Description": "Smartphone con pantalla Dynamic AMOLED 2X y c\u00E1mara de 50MP."
+  },
+  {
+    "Id": 3,
+    "Name": "Silla de Oficina Ergon\u00F3mica",
+    "Category": "Muebles",
+    "Price": 149.99,
+    "Stock": 30,
+    "Description": "Silla giratoria ergon\u00F3mica con soporte lumbar y reposabrazos ajustable."
+  },
+  {
+    "Id": 4,
+    "Name": "Cafetera Express Nespresso",
+    "Category": "Hogar",
+    "Price": 199.99,
+    "Stock": 10,
+    "Description": "Cafetera de c\u00E1psulas con sistema de alta presi\u00F3n y espumador de leche."
+  },
+  {
+    "Id": 5,
+    "Name": "Auriculares Inal\u00E1mbricos Sony WH-1000XM4",
+    "Category": "Electr\u00F3nica",
+    "Price": 279.99,
+    "Stock": 25,
+    "Description": "Auriculares de diadema con cancelaci\u00F3n de ruido activa."
+  }
+]

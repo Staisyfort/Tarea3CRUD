@@ -1,0 +1,24 @@
+## Ignore Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Ignore build output
+bin/
+obj/
+/bin
+/obj
+
+## Ignore publishing output
+publish/
+
+## Ignore user secrets and environment configuration
+appsettings.Development.json
+.env
+.env.*
+
+## Ignore system files
+.DS_Store
+Thumbs.db

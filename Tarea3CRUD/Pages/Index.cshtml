@@ -1,0 +1,49 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Panel de Control - CRUD";
+}
+
+<div class="container mt-4">
+    <div class="p-5 mb-4 bg-light rounded-3 shadow-sm border">
+        <h1 class="display-5 fw-bold">Bienvenido!</h1>
+        <p class="col-md-8 fs-5">Una aplicación básica para gestionar el inventario de productos.</p>
+        <hr class="my-4" />
+        <a asp-page="/Products/Index" class="btn btn-primary btn-lg">Ir a Gestión de Productos</a>
+    </div>
+
+    <div class="row g-4 mb-4">
+        <div class="col-md-3">
+            <div class="card bg-primary text-white shadow-sm h-100">
+                <div class="card-body text-center">
+                    <h6 class="card-title text-white-50">Total Productos</h6>
+                    <h2 class="display-6 fw-bold">@Model.TotalProducts</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-warning text-dark shadow-sm h-100">
+                <div class="card-body text-center">
+                    <h6 class="card-title text-dark-50">Bajo Stock</h6>
+                    <h2 class="display-6 fw-bold">@Model.LowStockProducts</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-danger text-white shadow-sm h-100">
+                <div class="card-body text-center">
+                    <h6 class="card-title text-white-50">Sin Stock</h6>
+                    <h2 class="display-6 fw-bold">@Model.OutOfStockProducts</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-success text-white shadow-sm h-100">
+                <div class="card-body text-center">
+                    <h6 class="card-title text-white-50">Precio Promedio</h6>
+                    <h2 class="display-6 fw-bold">@Model.AveragePrice.ToString("C")</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

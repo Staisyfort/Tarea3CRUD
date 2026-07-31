@@ -1,0 +1,57 @@
+@page "{id:int}"
+@model Tarea3CRUD.Pages.Products.DetailsModel
+@{
+    ViewData["Title"] = "Detalle del Producto";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <h2>Detalles del Producto</h2>
+            <hr />
+
+            <div class="card shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    <h4 class="mb-0">@Model.Product.Name</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-3">ID</dt>
+                        <dd class="col-sm-9">@Model.Product.Id</dd>
+
+                        <dt class="col-sm-3">Categoría</dt>
+                        <dd class="col-sm-9"><span class="badge bg-secondary">@Model.Product.Category</span></dd>
+
+                        <dt class="col-sm-3">Precio</dt>
+                        <dd class="col-sm-9">@Model.Product.Price.ToString("C")</dd>
+
+                        <dt class="col-sm-3">Stock</dt>
+                        <dd class="col-sm-9">
+                            @if (Model.Product.Stock == 0)
+                            {
+                                <span class="badge bg-danger">Sin Stock</span>
+                            }
+                            else if (Model.Product.Stock <= 5)
+                            {
+                                <span class="badge bg-warning text-dark">Bajo Stock (@Model.Product.Stock unidades)</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-success">En Stock (@Model.Product.Stock unidades)</span>
+                            }
+                        </dd>
+
+                        <dt class="col-sm-3">Descripción</dt>
+                        <dd class="col-sm-9">
+                            @(string.IsNullOrEmpty(Model.Product.Description) ? "Sin descripción disponible." : Model.Product.Description)
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a asp-page="./Index" class="btn btn-secondary">Volver</a>
+                    <a asp-page="./Edit" asp-route-id="@Model.Product.Id" class="btn btn-warning text-dark fw-bold">Editar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
